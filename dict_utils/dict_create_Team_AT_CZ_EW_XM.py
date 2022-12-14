@@ -1,6 +1,7 @@
 '''
 CS375 Project 4
-Aidan Tokarski
+Aidan Tokarski, Cynthia Zafris,
+Eda Wright, Xavier Markowitz
 
 Utilities for creating a SCOWL-like dictionary from text files
 '''

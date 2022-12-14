@@ -242,6 +242,21 @@ def editDistance_test():
     print("Output: ")
     print("Iterative: " + str(editDistance_iter("rock","rock")) + " / Recursive: " + str(editDistance_rec("rock","rock")))
 
+    print("\nTesting Runtime")
+    print("---------")
+    print("Input: ")
+    print("'abcdefghijklmn' 'zyxvutsrqponm'")
+    print("Recursive:")
+    start = time.monotonic()
+    editDistance_rec("abcdefghijklmn","zyxvutsrqponm")
+    end = time.monotonic()
+    print("Time elapsed: {}".format(end - start))
+    print("Iterative:")
+    start = time.monotonic()
+    editDistance_iter("abcdefghijklmn","zyxvutsrqponm")
+    end = time.monotonic()
+    print("Time elapsed: {}".format(end - start))
+
 def spellCheck_test():
     st = time.time()
     print("Testing Spell Checker")
